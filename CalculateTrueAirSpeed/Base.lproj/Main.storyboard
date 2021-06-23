@@ -1,24 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UKf-r1-H6b">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculateTrueAirSpeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Indicated Air Speed (IAS):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKS-dZ-CbD">
+                                <rect key="frame" x="30" y="158" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Air Temperature (ºC):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-Fh-ohQ">
+                                <rect key="frame" x="30" y="229" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WMY-Im-BWD">
+                                <rect key="frame" x="243" y="151.66666666666666" width="70" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="aYD-au-OhS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0V-st-Zd5">
+                                <rect key="frame" x="243" y="222.66666666666666" width="70" height="33.999999999999972"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ip-vN-5PD">
+                                <rect key="frame" x="243" y="360.66666666666669" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="True Air Speed (TAS):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4w-Jn-l39">
+                                <rect key="frame" x="30" y="350" width="164" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w0V-st-Zd5" firstAttribute="centerY" secondItem="TbQ-Fh-ohQ" secondAttribute="centerY" id="2ig-1F-92v"/>
+                            <constraint firstItem="WMY-Im-BWD" firstAttribute="centerY" secondItem="sKS-dZ-CbD" secondAttribute="centerY" id="97F-tQ-k8h"/>
+                            <constraint firstItem="w0V-st-Zd5" firstAttribute="leading" secondItem="WMY-Im-BWD" secondAttribute="leading" id="Dia-gU-7pL"/>
+                            <constraint firstItem="TbQ-Fh-ohQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="NGJ-Yi-K1x"/>
+                            <constraint firstItem="TbQ-Fh-ohQ" firstAttribute="top" secondItem="sKS-dZ-CbD" secondAttribute="bottom" constant="50" id="SSp-qC-rQj"/>
+                            <constraint firstItem="sKS-dZ-CbD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="SZZ-Ww-mWq"/>
+                            <constraint firstItem="3ip-vN-5PD" firstAttribute="centerY" secondItem="T4w-Jn-l39" secondAttribute="centerY" id="fMM-xn-HVe"/>
+                            <constraint firstItem="T4w-Jn-l39" firstAttribute="top" secondItem="TbQ-Fh-ohQ" secondAttribute="bottom" constant="100" id="hdm-gC-5g1"/>
+                            <constraint firstItem="WMY-Im-BWD" firstAttribute="leading" secondItem="sKS-dZ-CbD" secondAttribute="trailing" constant="17" id="ifZ-HR-aTv"/>
+                            <constraint firstItem="w0V-st-Zd5" firstAttribute="trailing" secondItem="WMY-Im-BWD" secondAttribute="trailing" id="uNK-KN-yuy"/>
+                            <constraint firstItem="3ip-vN-5PD" firstAttribute="leading" secondItem="w0V-st-Zd5" secondAttribute="leading" id="utW-Sv-gyb"/>
+                            <constraint firstItem="T4w-Jn-l39" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xvl-o1-jLD"/>
+                            <constraint firstItem="sKS-dZ-CbD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ygW-G4-9Vt"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gLM-HS-fHk">
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="6Hc-qm-wzc">
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Calculate" id="LhM-DX-hmc"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="852" y="114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gw0-Zu-ia3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UKf-r1-H6b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hsf-Lg-cCY">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="U6D-3o-Gqw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0VL-rH-pSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="113.79310344827587"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
