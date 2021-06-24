@@ -28,31 +28,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WMY-Im-BWD">
-                                <rect key="frame" x="243" y="151.66666666666666" width="70" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kt" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WMY-Im-BWD">
+                                <rect key="frame" x="243" y="151.66666666666666" width="90" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="aYD-au-OhS"/>
+                                    <constraint firstAttribute="width" constant="90" id="aYD-au-OhS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0V-st-Zd5">
-                                <rect key="frame" x="243" y="222.66666666666666" width="70" height="33.999999999999972"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ºC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0V-st-Zd5">
+                                <rect key="frame" x="243" y="222.66666666666666" width="90" height="33.999999999999972"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ip-vN-5PD">
-                                <rect key="frame" x="243" y="360.66666666666669" width="0.0" height="0.0"/>
+                                <rect key="frame" x="243" y="431.66666666666669" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="True Air Speed (TAS):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4w-Jn-l39">
-                                <rect key="frame" x="30" y="350" width="164" height="21"/>
+                                <rect key="frame" x="30" y="421" width="164" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altitude (feet):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqa-vW-2Uw">
+                                <rect key="frame" x="30.000000000000007" y="300" width="109.66666666666669" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ft" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NJL-hp-YYy">
+                                <rect key="frame" x="243" y="293.66666666666669" width="90" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -60,14 +71,19 @@
                             <constraint firstItem="w0V-st-Zd5" firstAttribute="centerY" secondItem="TbQ-Fh-ohQ" secondAttribute="centerY" id="2ig-1F-92v"/>
                             <constraint firstItem="WMY-Im-BWD" firstAttribute="centerY" secondItem="sKS-dZ-CbD" secondAttribute="centerY" id="97F-tQ-k8h"/>
                             <constraint firstItem="w0V-st-Zd5" firstAttribute="leading" secondItem="WMY-Im-BWD" secondAttribute="leading" id="Dia-gU-7pL"/>
+                            <constraint firstItem="NJL-hp-YYy" firstAttribute="leading" secondItem="w0V-st-Zd5" secondAttribute="leading" id="IVI-xD-pSS"/>
+                            <constraint firstItem="NJL-hp-YYy" firstAttribute="centerY" secondItem="Iqa-vW-2Uw" secondAttribute="centerY" id="J81-dh-h8Y"/>
+                            <constraint firstItem="Iqa-vW-2Uw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="MKj-GG-SKv"/>
                             <constraint firstItem="TbQ-Fh-ohQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="NGJ-Yi-K1x"/>
                             <constraint firstItem="TbQ-Fh-ohQ" firstAttribute="top" secondItem="sKS-dZ-CbD" secondAttribute="bottom" constant="50" id="SSp-qC-rQj"/>
                             <constraint firstItem="sKS-dZ-CbD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="SZZ-Ww-mWq"/>
+                            <constraint firstItem="Iqa-vW-2Uw" firstAttribute="top" secondItem="TbQ-Fh-ohQ" secondAttribute="bottom" constant="50" id="eeg-9r-LEz"/>
                             <constraint firstItem="3ip-vN-5PD" firstAttribute="centerY" secondItem="T4w-Jn-l39" secondAttribute="centerY" id="fMM-xn-HVe"/>
-                            <constraint firstItem="T4w-Jn-l39" firstAttribute="top" secondItem="TbQ-Fh-ohQ" secondAttribute="bottom" constant="100" id="hdm-gC-5g1"/>
+                            <constraint firstItem="T4w-Jn-l39" firstAttribute="top" secondItem="Iqa-vW-2Uw" secondAttribute="bottom" constant="100" id="hdm-gC-5g1"/>
                             <constraint firstItem="WMY-Im-BWD" firstAttribute="leading" secondItem="sKS-dZ-CbD" secondAttribute="trailing" constant="17" id="ifZ-HR-aTv"/>
                             <constraint firstItem="w0V-st-Zd5" firstAttribute="trailing" secondItem="WMY-Im-BWD" secondAttribute="trailing" id="uNK-KN-yuy"/>
                             <constraint firstItem="3ip-vN-5PD" firstAttribute="leading" secondItem="w0V-st-Zd5" secondAttribute="leading" id="utW-Sv-gyb"/>
+                            <constraint firstItem="NJL-hp-YYy" firstAttribute="trailing" secondItem="w0V-st-Zd5" secondAttribute="trailing" id="x7L-cJ-Tfl"/>
                             <constraint firstItem="T4w-Jn-l39" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xvl-o1-jLD"/>
                             <constraint firstItem="sKS-dZ-CbD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ygW-G4-9Vt"/>
                         </constraints>
@@ -75,13 +91,26 @@
                     <navigationItem key="navigationItem" id="gLM-HS-fHk">
                         <barButtonItem key="leftBarButtonItem" title="Clear" id="6Hc-qm-wzc">
                             <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="clearButtonPressed:" destination="BYZ-38-t0r" id="gMx-6e-Oxx"/>
+                            </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Calculate" id="LhM-DX-hmc"/>
+                        <barButtonItem key="rightBarButtonItem" title="Calculate" id="LhM-DX-hmc">
+                            <connections>
+                                <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" id="3tl-m3-UBz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="altitudeTextField" destination="NJL-hp-YYy" id="DIT-Or-gk9"/>
+                        <outlet property="iasTextField" destination="WMY-Im-BWD" id="Cde-1L-qbB"/>
+                        <outlet property="resultLabel" destination="3ip-vN-5PD" id="hz4-Ve-Qh4"/>
+                        <outlet property="temperatureTextField" destination="w0V-st-Zd5" id="piC-KV-D0G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="114"/>
+            <point key="canvasLocation" x="852" y="113.79310344827587"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gw0-Zu-ia3">
