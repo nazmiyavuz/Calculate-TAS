@@ -13,6 +13,7 @@
 		401FF20226837EC8003F1438 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401FF20026837EC8003F1438 /* Main.storyboard */; };
 		401FF20426837ECA003F1438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 401FF20326837ECA003F1438 /* Assets.xcassets */; };
 		401FF20726837ECA003F1438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401FF20526837ECA003F1438 /* LaunchScreen.storyboard */; };
+		401FF20F268382FA003F1438 /* SpeedComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401FF20E268382FA003F1438 /* SpeedComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		401FF20326837ECA003F1438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		401FF20626837ECA003F1438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		401FF20826837ECA003F1438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		401FF20E268382FA003F1438 /* SpeedComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				401FF1FA26837EC8003F1438 /* AppDelegate.swift */,
 				401FF1FC26837EC8003F1438 /* SceneDelegate.swift */,
-				401FF1FE26837EC8003F1438 /* ViewController.swift */,
+				401FF20E268382FA003F1438 /* SpeedComponents.swift */,
 				401FF20026837EC8003F1438 /* Main.storyboard */,
+				401FF1FE26837EC8003F1438 /* ViewController.swift */,
 				401FF20326837ECA003F1438 /* Assets.xcassets */,
 				401FF20526837ECA003F1438 /* LaunchScreen.storyboard */,
 				401FF20826837ECA003F1438 /* Info.plist */,
@@ -139,6 +142,7 @@
 			files = (
 				401FF1FF26837EC8003F1438 /* ViewController.swift in Sources */,
 				401FF1FB26837EC8003F1438 /* AppDelegate.swift in Sources */,
+				401FF20F268382FA003F1438 /* SpeedComponents.swift in Sources */,
 				401FF1FD26837EC8003F1438 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
